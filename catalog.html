@@ -18,7 +18,9 @@
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="login-navigation">
-          <li class="login-button">Войти</li>
+          <li class="login-button">
+            <a class="login-link" href="login.html">Войти</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,22 +33,56 @@
          <li class="breadcrumbs-current">Средства ухода</li>
        </ul>
        </section>
-       <section class="filter">
+       <section class="filters">
          <h2 class="hiddent-element">Фильтр</h2>
-         <!--Здесь будет форма-->
+         <form class="filter" action="https://htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" name="Baxter-of-California" class="hidden-element filter-input filter-input-checkbox" id="Filter-Baxter-of-California" checked><label for="Filter-Baxter-of-California">Baxter of California</label></li>
+              <li class="filter-option">
+                <input type="checkbox" name="Mr Natty" class="hidden-element filter-input filter-input-checkbox" id="Filter-Mr-Natty"><label for="Filter-Mr-Natty">Mr Natty</label></li>
+              <li class="filter-option">
+                <input type="checkbox" name="Suavecito" class="hidden-element filter-input filter-input-checkbox" id="Filter-Suavecito" checked><label for="Filter-Suavecito">Suavecito</label></li>
+              <li class="filter-option">
+                <input type="checkbox" name="Malin+Goets" class="hidden-element filter-input filter-input-checkbox" id="Filter-Malin+Goets"><label for="Filter-Malin+Goets">Malin+Goets</label></li>
+              <li class="filter-option">
+                <input type="checkbox" name="Murray's" class="hidden-element filter-input filter-input-checkbox" id="Filter-Murray's"><label for="Filter-Murray's">Murray's</label></li>
+              <li class="filter-option">
+                <input type="checkbox" name="American-Crew" class="hidden-element filter-input filter-input-checkbox" id="Filter-American-Crew" checked><label for="Filter-American-Crew">American Crew</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров</legend>
+            <ul>
+              <li>
+                <input type="radio" name="product-group" class="filter-option" value="for-shaving" id="filter-for-shaving">
+                <label for="filter-for-shaving">Бритвенные принадлежности</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" class="filter-option" value="cair-products" id="filter-cair-products">
+                <label for="filter-cair-products">Стредства для ухода</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" class="filter-option" value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Аксессуары</label>
+              </li>
+            </ul>
+            <button type="submit" class="button filter-button">Показать</button>
+          </fieldset>
+         </filter>
        </section>
        <section class="catalog">
         <h2 class="hidden-element">Список товаров</h2>
          <ul class="item-list">
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
               <span class="item-category">Набор путешествий</span>
               <span class="item-title">Baxter of California"</span>
-              </a>
              </h3>
           <p>
-            <a href="catalog-item.html">
              <img src="img/item-1.jpg" alt="Набор путешествия Baxter of California">
             </a>
           </p>
@@ -56,14 +92,12 @@
           </p>
         </li>
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
                 <span class="item-category">Увлажняющий кондиционер</span>
                 <span class="item-name">"Baxter of California"</span>
-               </a>
              </h3>
            <p>
-             <a href="catalog-item.html">
              <img src="img/item-2.jpg" alt="Увлажняющий кондиционер Baxter of California">
              </a>
            </p>
@@ -73,14 +107,12 @@
            </p>
           </li>
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
               <span class="item-category">Гель для волос</span>
               <span class="item-title">"Suavecito"</span>
-               </a>
              </h3>
           <p>
-            <a href="catalog-item.html">
              <img src="img/item-3.jpg" alt="Гель для волос Suavecito">
             </a>
           </p>
@@ -90,14 +122,12 @@
           </p>
         </li>
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
                 <span class="item-category">Глина для укладки волос</span>
                 <span class="item-name">"American Crew"</span>
-               </a>
              </h3>
            <p>
-             <a href="catalog-item.html">
              <img src="img/item-4.jpg" alt="Глина для укладки волос American Crew">
              </a>
            </p>
@@ -107,14 +137,12 @@
            </p>
           </li>
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
                 <span class="item-category">Гель для волос</span>
                 <span class="item-name">"American Crew"</span>
-               </a>
              </h3>
            <p>
-             <a href="catalog-item.html">
              <img src="img/item-5.jpg" alt="Гель для волос American Crew">
              </a>
            </p>
@@ -124,14 +152,12 @@
            </p>
           </li>
           <li class="item-name">
+            <a href="catalog-item.html">
              <h3>
-               <a href="catalog-item.html">
                 <span class="item-category">Набор для бритья</span>
                 <span class="item-name">"Baxter of California"</span>
-               </a>
              </h3>
            <p>
-             <a href="catalog-item.html">
              <img src="img/item-6.jpg" alt="Набор для бритья Baxter of California">
              </a>
            </p>
@@ -170,16 +196,26 @@
           </p>
           </footer>
 
-       <section class="modal modal-login">
-         <h2>Личный Кабинет</h2>
-         <p>Введите пожалуйста свой логин и пароль</p>
-         <!--Здесь будет Форма-->
-         <span class="modal-close">x</span>
-       </section>
-       <section class="modal mosal-map">
-         <h2 class="hidden-element">Как до нас добраться</h2>
-         <span class="modal-close">x</span>
-         </section>
+          <section class="modal modal-login">
+            <h2>Личный Кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="https://htmlacademy.ru" method="post">
+              <p><label for="user-login" class="hidden-element">Логин</label>
+                <input id="user-login" type="text" name="login" placeholder="Логин"></p>
+              <p><label for="user-password" class="hiddent-element">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль"></p>
+              <p><label><input type="checkbox" name="rememberme" checked>Запомнить меня</label>
+              <a href="forgot.html" class="forgot">Я забыл пароль</a></p>
+              <a href="#"><button type="submit" class="button login-button-modal">Войти</button></a>
+            </form>
+            <button type="button" class="modal-close">x</button>
+          </section>
+          <section class="modal modal-map">
+            <h2 class="hidden-element">Как до нас добраться</h2>
+            <img src="map.jpg" alt="Барбершоп Бородинский по адресу Г. Санкт-Петербург, Б. Конюшенная, Д. 19/8<br>
+            Телефон: +7(495)666-02-66 ">
+            <button type="button" class="modal-close">x</button>
+            </section>
 
   </body>
 </html>

@@ -18,7 +18,9 @@
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="login-navigation">
-          <li class="login-button">Войти</li>
+          <li class="login-button">
+            <a class="login-link" href="login.html">Войти</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -94,12 +96,20 @@
                   </p>
                   </footer>
 
-               <section class="modal modal-login">
-                 <h2>Личный Кабинет</h2>
-                 <p>Введите пожалуйста свой логин и пароль</p>
-                 <!--Здесь будет Форма-->
-                 <span class="modal-close">x</span>
-               </section>
+                  <section class="modal modal-login">
+                    <h2>Личный Кабинет</h2>
+                    <p>Введите пожалуйста свой логин и пароль</p>
+                    <form class="login-form" action="https://htmlacademy.ru" method="post">
+                      <p><label for="user-login" class="hidden-element">Логин</label>
+                        <input id="user-login" type="text" name="login" placeholder="Логин"></p>
+                      <p><label for="user-password" class="hiddent-element">Пароль</label>
+                        <input id="user-password" type="password" name="password" placeholder="Пароль"></p>
+                      <p><label><input type="checkbox" name="rememberme" checked>Запомнить меня</label>
+                      <a href="forgot.html" class="forgot">Я забыл пароль</a></p>
+                      <a href="#"><button type="submit" class="button login-button-modal">Войти</button></a>
+                    </form>
+                    <button type="button" class="modal-close">x</button>
+                  </section>
                <section class="modal mosal-map">
                  <h2 class="hidden-element">Как до нас добраться</h2>
                  <span class="modal-close">x</span>

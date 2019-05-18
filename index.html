@@ -18,7 +18,9 @@
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="login-navigation">
-          <li class="login-button">Войти</li>
+          <li class="login-button">
+            <a class="login-link" href="login.html">Войти</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -55,10 +57,10 @@
        <section class="photo-gallery">
          <h2>Фотогалерея</h2>
          <figure class="gallery-content">
-           <a href="#"><img src="img/interior.jpg" alt="глав. помещение"></a>
+           <a href="#"><img src="img/interior.jpg" alt="глав. помещение" width="286" height="164"></a>
          </figure>
-         <span class="button gallery-button-back">назад</span>
-         <span class="button gallery-button-forward">вперед</span>
+         <button type="button" class="button gallery-button-back">назад</button>
+         <button type="button" class="button gallery-button-forward">вперед</button>
        </section>
        <section class="contacts">
          <h2>Контактная информация</h2>
@@ -74,7 +76,17 @@
        <section class="order">
          <h2>Записаться</h2>
          <p class="order-info">Укажите желаемую дату и время и мы свяжемся в вами для подтверждения брони</p>
-         <!--Здесь будет форма-->
+         <form class="order-form" action="https://htmlacademy.ru" method="post">
+          <p><label for="order-date">Дата</label>
+         <input type="text" name="date" placeholder="08.10.2017" id="order-date"></p>
+         <p><label for="order-time">Время</label>
+         <input type="text" name="time" placeholder="10:00" id="order-time"></p>
+         <p><label for="order-name">Ваше Имя</label>
+         <input type="text" name="name" id="order-name" placeholder="Борода"></p>
+        <p><label for="order-number">Телефон</label>
+         <input type="tel" name="number" id="order-number" placeholder="+7 123 456-78-90"></p>
+         <p><button type="submit" class="button order-button-submit">Отправить</button>
+         </form>
        </section>
      </main>
        <footer class="main-footer">
@@ -100,14 +112,22 @@
           <section class="modal modal-login">
             <h2>Личный Кабинет</h2>
             <p>Введите пожалуйста свой логин и пароль</p>
-            <!--Здесь будет Форма-->
-            <span class="modal-close">x</span>
+            <form class="login-form" action="https://htmlacademy.ru" method="post">
+              <p><label for="user-login" class="hidden-element">Логин</label>
+                <input id="user-login" type="text" name="login" placeholder="Логин"></p>
+              <p><label for="user-password" class="hiddent-element">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль"></p>
+              <p><label><input type="checkbox" name="rememberme" checked>Запомнить меня</label>
+              <a href="forgot.html" class="forgot">Я забыл пароль</a></p>
+              <a href="#"><button type="submit" class="button login-button-modal">Войти</button></a>
+            </form>
+            <button type="button" class="modal-close">x</button>
           </section>
           <section class="modal modal-map">
             <h2 class="hidden-element">Как до нас добраться</h2>
             <img src="map.jpg" alt="Барбершоп Бородинский по адресу Г. Санкт-Петербург, Б. Конюшенная, Д. 19/8<br>
             Телефон: +7(495)666-02-66 ">
-            <span class="modal-close">x</span>
+            <button type="button" class="modal-close">x</button>
             </section>
   </body>
 </html>

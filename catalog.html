@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
        <a href="index.html" class="header-logo">
           <img src="img/barber-shoplogo-mini.svg" alt="Barbershop Logo">
        </a>
-        <ul class="pages-list">
+        <ul class="navigation-list">
           <li> <a href="info.html">Информация</a></li>
           <li> <a href="news.html">Новости</a></li>
           <li> <a href="price-list.html">Прайс-Лист</a></li>
           <li> <a class="navigation-current" href="shop.html">Магазин</a></li>
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="login-navigation">
+        <ul class="navigation-login">
           <li class="login-button">
             <a class="login-link" href="login.html">Войти</a>
           </li>
@@ -25,6 +28,7 @@
       </nav>
     </header>
     <main>
+
       <section>
       <h1 class="page-title">Средства ухода</h1>
        <uL class="breadcrumbs">
@@ -72,6 +76,7 @@
             <button type="submit" class="button filter-button">Показать</button>
           </fieldset>
          </filter>
+       </form>
        </section>
        <section class="catalog">
         <h2 class="hidden-element">Список товаров</h2>
@@ -86,7 +91,7 @@
              <img src="img/item-1.jpg" alt="Набор путешествия Baxter of California">
             </a>
           </p>
-          <p>
+          <p class="item-price">
            <b>2 900</b>
            <a class="button" href="#">Купить</a>
           </p>
@@ -101,7 +106,7 @@
              <img src="img/item-2.jpg" alt="Увлажняющий кондиционер Baxter of California">
              </a>
            </p>
-           <p>
+           <p class="item-price">
              <b>750</b>
              <a class="button" href="#">Купить</a>
            </p>
@@ -116,7 +121,7 @@
              <img src="img/item-3.jpg" alt="Гель для волос Suavecito">
             </a>
           </p>
-          <p>
+          <p class="item-price">
            <b>290</b>
            <a class="button" href="#">Купить</a>
           </p>
@@ -131,7 +136,7 @@
              <img src="img/item-4.jpg" alt="Глина для укладки волос American Crew">
              </a>
            </p>
-           <p>
+           <p class="item-price">
              <b>500</b>
              <a class="button" href="#">Купить</a>
            </p>
@@ -146,7 +151,7 @@
              <img src="img/item-5.jpg" alt="Гель для волос American Crew">
              </a>
            </p>
-           <p>
+           <p class="item-price">
              <b>300</b>
              <a class="button" href="#">Купить</a>
            </p>
@@ -162,7 +167,7 @@
              </a>
            </p>
            <p>
-             <b>3 900</b>
+             <b class="item-price">3 900</b>
              <a class="button" href="#">Купить</a>
            </p>
           </li>
@@ -175,6 +180,7 @@
             <li class="pagination-item"><a href="#">4</a></li>
           </ul>
         </section>
+
   </main>
     <footer class="main-footer">
       <p class="footer-contacts">
@@ -207,13 +213,12 @@
               <p><label><input type="checkbox" name="rememberme" checked>Запомнить меня</label>
               <a href="forgot.html" class="forgot">Я забыл пароль</a></p>
               <a href="#"><button type="submit" class="button login-button-modal">Войти</button></a>
+              <button type="button" class="modal-close">x</button>
             </form>
-            <button type="button" class="modal-close">x</button>
           </section>
           <section class="modal modal-map">
             <h2 class="hidden-element">Как до нас добраться</h2>
-            <img src="map.jpg" alt="Барбершоп Бородинский по адресу Г. Санкт-Петербург, Б. Конюшенная, Д. 19/8<br>
-            Телефон: +7(495)666-02-66 ">
+            <img src="map.jpg" alt="Барбершоп Бородинский по адресу Г. Санкт-Петербург, Б. Конюшенная, Д. 19/8">
             <button type="button" class="modal-close">x</button>
             </section>
 

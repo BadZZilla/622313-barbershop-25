@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page ">
     <header class="main-header">
       <nav class="main-navigation">
        <a href="index.html" class="header-logo">
           <img src="img/barber-shoplogo-mini.svg" alt="Barbershop Logo">
        </a>
-        <ul class="pages-list">
+        <ul class="navigation-list">
           <li> <a href="info.html">Информация</a></li>
           <li> <a href="news.html">Новости</a></li>
           <li> <a href="price-list.html">Прайс-Лист</a></li>
           <li> <a class="navigation-current" href="shop.html">Магазин</a></li>
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="login-navigation">
+        <ul class="navigation-login">
           <li class="login-button">
             <a class="login-link" href="login.html">Войти</a>
           </li>
@@ -36,7 +39,7 @@
       </section>
       <section class="product-photo">
         <h2 class="hidden-element">Фото товара</h2>
-        <p>
+        <p class="item-photo-full">
          <img src="img/item-1-big.jpg" alt="Весь набор">
         </p>
         <ul class="item-photo-preview">
@@ -85,9 +88,9 @@
                 <div class="footer-links">
                   <b>Давайте Дружить!</b>
                   <ul>
-                    <li class="social-button"><a href="#"><img src="vk.svg">Вконтакте</a></li>
-                    <li class="social-button"><a href="#"><img src="facebook.svg">Фейсбук</a></li>
-                    <li class="social-button"><a href="#"><img src="instagram.svg">Инстаграм</a></li>
+                    <li class="social-button"><a href="#"><img src="img/vk.svg">Вконтакте</a></li>
+                    <li class="social-button"><a href="#"><img src="img/facebook.svg">Фейсбук</a></li>
+                    <li class="social-button"><a href="#"><img src="img/instagram.svg">Инстаграм</a></li>
                   </ul>
                 </div>
                   <p class="footer-copyright">
@@ -110,9 +113,10 @@
                     </form>
                     <button type="button" class="modal-close">x</button>
                   </section>
-               <section class="modal mosal-map">
-                 <h2 class="hidden-element">Как до нас добраться</h2>
-                 <span class="modal-close">x</span>
-                 </section>
+                  <section class="modal modal-map">
+                    <h2 class="hidden-element">Как до нас добраться</h2>
+                    <img src="img/map.jpg" alt="Барбершоп Бородинский по адресу Г. Санкт-Петербург, Б. Конюшенная, Д. 19/8">
+                    <button type="button" class="modal-close">x</button>
+                    </section>
            </body>
         </html>
